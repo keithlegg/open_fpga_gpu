@@ -1,0 +1,126 @@
+#######################################################
+
+
+
+#######################################################
+#STANDARD MOJO PINS 
+#######################################################
+
+#Created by Constraints Editor (xc6slx9-tqg144-3) - 2012/11/05
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 50 MHz HIGH 50%;
+
+# PlanAhead Generated physical constraints 
+NET "clk" LOC = P56 | IOSTANDARD = LVTTL;
+NET "rst_n" LOC = P38 | IOSTANDARD = LVTTL;
+
+NET "cclk" LOC = P70 | IOSTANDARD = LVTTL;
+
+NET "led<0>" LOC = P134 | IOSTANDARD = LVTTL;
+NET "led<1>" LOC = P133 | IOSTANDARD = LVTTL;
+NET "led<2>" LOC = P132 | IOSTANDARD = LVTTL;
+NET "led<3>" LOC = P131 | IOSTANDARD = LVTTL;
+NET "led<4>" LOC = P127 | IOSTANDARD = LVTTL;
+NET "led<5>" LOC = P126 | IOSTANDARD = LVTTL;
+NET "led<6>" LOC = P124 | IOSTANDARD = LVTTL;
+NET "led<7>" LOC = P123 | IOSTANDARD = LVTTL;
+
+NET "spi_mosi" LOC = P44 | IOSTANDARD = LVTTL;
+NET "spi_miso" LOC = P45 | IOSTANDARD = LVTTL;
+NET "spi_ss" LOC = P48 | IOSTANDARD = LVTTL;
+NET "spi_sck" LOC = P43 | IOSTANDARD = LVTTL;
+NET "spi_channel<0>" LOC = P46 | IOSTANDARD = LVTTL;
+NET "spi_channel<1>" LOC = P61 | IOSTANDARD = LVTTL;
+NET "spi_channel<2>" LOC = P62 | IOSTANDARD = LVTTL;
+NET "spi_channel<3>" LOC = P65 | IOSTANDARD = LVTTL;
+
+NET "avr_tx" LOC = P55 | IOSTANDARD = LVTTL;
+NET "avr_rx" LOC = P59 | IOSTANDARD = LVTTL;
+NET "avr_rx_busy" LOC = P39 | IOSTANDARD = LVTTL;
+
+#######################################################
+
+#VGA OUT - MODIFIED FOR KEITHS HARDWARE - FEB 20,2017
+NET "rpin" LOC = P139 | IOSTANDARD = LVTTL;
+NET "gpin" LOC = P140 | IOSTANDARD = LVTTL;
+NET "bpin" LOC = P141 | IOSTANDARD = LVTTL;
+NET "hpin" LOC = P137 | IOSTANDARD = LVTTL;
+NET "vpin" LOC = P138 | IOSTANDARD = LVTTL;
+
+
+#######################################################
+#ISSI - SRAM - 16X512 - control bus for two chips, 3 bits per 
+
+
+NET "sram1_we" LOC = P50 | IOSTANDARD = LVTTL;
+NET "sram1_cs" LOC = P40 | IOSTANDARD = LVTTL;
+NET "sram1_oe" LOC = P34 | IOSTANDARD = LVTTL;
+
+NET "sram2_we" LOC = P51 | IOSTANDARD = LVTTL;
+NET "sram2_cs" LOC = P41 | IOSTANDARD = LVTTL;
+NET "sram2_oe" LOC = P35 | IOSTANDARD = LVTTL;
+
+#######################################################
+#ISSI - SRAM - 16X512 - 19bit address bus  (both chips) 
+
+NET "sram_a<0>" LOC = P58 | IOSTANDARD = LVTTL;
+NET "sram_a<1>" LOC = P67 | IOSTANDARD = LVTTL;
+NET "sram_a<2>" LOC = P75 | IOSTANDARD = LVTTL;
+NET "sram_a<3>" LOC = P79 | IOSTANDARD = LVTTL;
+NET "sram_a<4>" LOC = P81 | IOSTANDARD = LVTTL;
+NET "sram_a<5>" LOC = P83 | IOSTANDARD = LVTTL;
+NET "sram_a<6>" LOC = P85 | IOSTANDARD = LVTTL;
+NET "sram_a<7>" LOC = P88 | IOSTANDARD = LVTTL;
+NET "sram_a<8>" LOC = P93 | IOSTANDARD = LVTTL;
+NET "sram_a<9>" LOC = P95 | IOSTANDARD = LVTTL;
+NET "sram_a<10>" LOC = P98 | IOSTANDARD = LVTTL;
+NET "sram_a<11>" LOC = P100 | IOSTANDARD = LVTTL;
+NET "sram_a<12>" LOC = P102 | IOSTANDARD = LVTTL;
+NET "sram_a<13>" LOC = P105 | IOSTANDARD = LVTTL;
+NET "sram_a<14>" LOC = P112 | IOSTANDARD = LVTTL;
+NET "sram_a<15>" LOC = P115 | IOSTANDARD = LVTTL;
+NET "sram_a<16>" LOC = P117 | IOSTANDARD = LVTTL;
+NET "sram_a<17>" LOC = P119 | IOSTANDARD = LVTTL;
+NET "sram_a<18>" LOC = P121 | IOSTANDARD = LVTTL;
+
+#######################################################
+#ISSI - SRAM - 16X512 - 16bit data bus (both chips) 
+
+NET "sram_bidir<0>" LOC = P57 | IOSTANDARD = LVTTL;
+NET "sram_bidir<1>" LOC = P66 | IOSTANDARD = LVTTL;
+NET "sram_bidir<2>" LOC = P74 | IOSTANDARD = LVTTL;
+NET "sram_bidir<3>" LOC = P78 | IOSTANDARD = LVTTL;
+NET "sram_bidir<4>" LOC = P80 | IOSTANDARD = LVTTL;
+NET "sram_bidir<5>" LOC = P82 | IOSTANDARD = LVTTL;
+NET "sram_bidir<6>" LOC = P84 | IOSTANDARD = LVTTL;
+NET "sram_bidir<7>" LOC = P87 | IOSTANDARD = LVTTL;
+NET "sram_bidir<8>" LOC = P92 | IOSTANDARD = LVTTL;
+NET "sram_bidir<9>" LOC = P94 | IOSTANDARD = LVTTL;
+NET "sram_bidir<10>" LOC = P97 | IOSTANDARD = LVTTL;
+NET "sram_bidir<11>" LOC = P99 | IOSTANDARD = LVTTL;
+NET "sram_bidir<12>" LOC = P101 | IOSTANDARD = LVTTL;
+NET "sram_bidir<13>" LOC = P104 | IOSTANDARD = LVTTL;
+NET "sram_bidir<14>" LOC = P111 | IOSTANDARD = LVTTL;
+NET "sram_bidir<15>" LOC = P114 | IOSTANDARD = LVTTL;
+
+
+
+#######################################################
+
+#"AD HOC" SPI PORTS - NEW ILUMINATI RAM BOARD   
+
+# SPI1 - KEITH WAS HERE - WENT FOR BEER 
+NET "klspi_cs"   LOC = P21 | IOSTANDARD = LVTTL;
+NET "klspi_clk"  LOC = P22 | IOSTANDARD = LVTTL;
+NET "klspi_mosi" LOC = P16 | IOSTANDARD = LVTTL;
+NET "klspi_miso" LOC = P14 | IOSTANDARD = LVTTL;
+
+# SPI2 -  NEED TO SNOOP IN ON SPI - LETS JUST ECHO SPI ON MORE PINS!!
+NET "klspi_miso2" LOC = P9 | IOSTANDARD = LVTTL;
+NET "klspi_mosi2" LOC = P10 | IOSTANDARD = LVTTL;
+NET "klspi_cs_2" LOC = P7 | IOSTANDARD = LVTTL;
+NET "klspi_clk_2" LOC = P5 | IOSTANDARD = LVTTL;
+
+
+
+
