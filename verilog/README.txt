@@ -1,4 +1,8 @@
-this is based on Xilinx ISE 14.7 using the "mojo_startup" project.
+this is based on Xilinx ISE 14.7 
 
-Copy these files into a fresh copy of that and it should work. 
+The PCB/framebuffer is a SRAM board that sits on top of the mojo. 
+
+Start by getting a fresh copy of the "mojo-base-project" project.
+
+Copy these files into that and it should work. 
 
