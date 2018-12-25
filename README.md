@@ -1,6 +1,32 @@
 
 
-![alt text](https://raw.githubusercontent.com/keithlegg/open_fpga_gpu/master/images/sram_back/board1.jpg) 
 ![alt text](https://raw.githubusercontent.com/keithlegg/open_fpga_gpu/master/images/sram_back/board2.jpg) 
 
+
 # open_fpga_gpu
+
+
+Another big silly experiment from Keith. A hardware platform fro graphics and more. 
+
+SRAM "shield" for the mojo FPGA. 
+
+Features 2 IS62WV51216BLL SRAM chips.
+
+Each SRAM chip has 512K x 16 CMOS low power static RAM
+
+Both chips share the address and data bus with seperate programable control lines.
+
+
+Also has a slot for a 1bitsy ARM chip, not wired directly to the FPGA but there are headers if you want to.
+
+Every mojo pin has been broken out so you can snoop with logic tools, or reconfigure how you want. 
+This makes the board much larger, but keeps things easier for prototyping. 
+
+
+
+Bresenham code borrowed from here:
+
+    https://github.com/kavinr/Bresenham-Line-Drawing-Algorithm
+
+
+
