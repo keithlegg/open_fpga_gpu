@@ -6,9 +6,11 @@
 # open_fpga_gpu
 
 
-Another big silly experiment from Keith. A hardware platform fro graphics and more. 
+Another big silly experiment from Keith. A hardware platform for graphics and possibly computer vision.
 
-SRAM "shield" for the mojo FPGA. 
+
+Basically its an SRAM "shield" for the mojo FPGA. The mojo/ISE is getting a bit "long in the tooth". Probably not going to last forever. I built on this platform because its what I am familiar with. 
+
 
 Features 2 IS62WV51216BLL SRAM chips.
 
