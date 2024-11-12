@@ -23,7 +23,7 @@ Features 2 IS62WV51216BLL SRAM chips.
 
 Each SRAM chip has 512K x 16 CMOS low power static RAM
 
-Both chips share the address and data bus with seperate programable control lines.
+Both chips share the address and data bus with separate programable control lines.
 
 
 Also has a slot for a 1bitsy ARM chip, not wired directly to the FPGA but there are headers if you want to.
