@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "mojoback_sram-rescue")(type "KiCad")(uri "${KIPRJMOD}/mojoback_sram-rescue.kicad_sym")(options "")(descr ""))
+)
